@@ -8,7 +8,7 @@ EPS = 1e-6
 
 def get_time_bins(T, E, size=12):
     """
-    Method to automatically define time bins
+    Method to automatically define time bins, by defaut uses 12 time bins
     """
 
     lower_bound = max(T[E == 0].min(), T[E == 1].min()) + 1
